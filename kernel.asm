@@ -798,7 +798,6 @@ command_bye:
 ; ============================================================
 
 reply_hello:
-    db "HELLO TEST WORKS!", 13, 10
     db "Nice to meet you. :)", 13, 10
     db 13, 10
     db 0
