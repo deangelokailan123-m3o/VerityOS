@@ -1,358 +1,137 @@
-# VerityOS 💾
+# 💾 VerityOS 0.3
 
-**A tiny 16-bit operating system with a surprisingly large personality.**
+**VerityOS 0.3** is a tiny experimental 16-bit hobby operating system written primarily in x86 Assembly.
 
-VerityOS is a hobby operating system written almost entirely in **16-bit x86 Assembly** and built from scratch to boot through the BIOS.
+It boots from a floppy disk image, runs its own text-based environment, includes built-in programs and a game, and — starting with VerityOS 0.3 — can actually remember files after a reboot.
 
-What started as a boot sector displaying:
+> **VerityOS remembers.**
 
-> Welcome to VerityOS 0.1!
+---
 
-has grown into a tiny operating system with its own kernel, text-mode desktop, built-in AI-style assistant, text editor, PC Speaker sound, and game.
+## ✨ What's New in VerityOS 0.3?
 
-## Current Version
+The biggest addition to VerityOS 0.3 is:
 
-**VerityOS 0.3**
+# 💾 VerityFS 1.0
 
-VerityOS is still an experimental hobby operating system and is actively being developed.
+VerityFS is VerityOS's first persistent filesystem.
 
-## What's New in 0.3?
+Previous versions could keep information in memory while VerityOS was running, but that information disappeared after rebooting.
 
-VerityOS 0.3 introduces:
+Not anymore.
 
-* 📝 **VerityEdit 1.1**
-* 🤖 **Verity AI 1.2**
-* 🎮 **VerityCraft 1.2**
-* 🖥️ Updated VerityOS desktop
+With VerityFS 1.0, VerityOS can write file data to the disk image and load it again later.
 
-## 🖥️ VerityOS Desktop
+You can:
 
-VerityOS boots into a text-mode desktop that acts as the main launcher for the operating system.
+1. Write something in VerityEdit.
+2. Save it.
+3. Shut down VerityOS.
+4. Close the emulator.
+5. Start VerityOS again.
+6. Open your file.
 
-Current applications and options:
+**It's still there.**
 
-```text
-[A] Verity AI
-[E] VerityEdit
-[G] VerityCraft
-[I] About
-[R] Reboot
-[Q] Shutdown
-```
+Yes, we tested it.
 
-Everything runs in **16-bit x86 real mode** using BIOS services and direct hardware access where appropriate.
+Yes, it worked.
 
-## 📝 VerityEdit 1.1
+First try. :)
 
-New in VerityOS 0.3!
+---
 
-**VerityEdit** is the first text editor built into VerityOS.
+## 📝 VerityEdit
 
-It allows you to type and edit a document directly inside the operating system.
+VerityEdit is the built-in text editor for VerityOS.
 
-Features include:
+With VerityFS, documents are no longer limited to temporary memory.
 
-* Normal keyboard input
-* Backspace
-* Multiple lines
-* RAM-based text buffer
-* Clear document
-* Demo document
-* Built-in help
-* ESC to return to VerityOS
+You can now write something, save it to disk, reboot, and return to it later.
 
-Example:
+Technically, this means you could write your school essay in VerityOS.
 
-```text
-+------------------------------------------------------------------------------+
-| VerityEdit 1.1                                             VerityOS 0.3      |
-+------------------------------------------------------------------------------+
-| File: UNTITLED.TXT                                                          |
-+------------------------------------------------------------------------------+
+Whether you *should* trust your school essay to an experimental homemade 16-bit operating system is another question.
 
-Hello from VerityOS!
-This text was typed inside VerityEdit.
-_
-```
+---
 
-### The Current Limitation That Are Not There
+## 📁 VerityFiles 1.0
 
-VerityEdit 1.1 stores documents in i dont know.
+VerityFiles provides a simple way to view files stored by VerityFS.
 
-Well it does save when you reboot it so it works.
+VerityOS 0.3 is the first VerityOS release where files can persist between sessions.
+
+---
 
 ## 🤖 Verity AI 1.2
 
-VerityOS includes its own built-in assistant called **Verity AI**.
+Verity AI returns in version **1.2**.
 
-Verity AI is not a machine-learning model. Its responses are currently hardcoded directly into VerityOS, but it provides a chat-style interface where the user can type messages and receive responses.
+Verity AI is a small built-in simulated AI/chat program using predefined responses.
 
-Verity AI 1.2 understands commands including:
+It is not an internet-connected large language model.
 
-```text
-hello
-hi
-hey
-help
-who are you
-verityos
-veritycraft
-verityedit
-how are you
-joke
-version
-exit
-bye
-```
+It's just Verity being Verity.
 
-Example:
+And yes, Verity AI speaks English now.
 
-```text
-You: hello
-Verity AI: Hello! Nice to meet you. :)
-How can I help you today?
+We don't talk about the Alien Language Incident.
 
-You: who are you
-Verity AI: I am Verity AI 1.2, the built-in assistant for VerityOS.
-
-You: joke
-Verity AI: Why did the bootloader cross the disk?
-To get to the other sector.
-```
-
-Yes.
-
-The bootloader joke survived the update.
+---
 
 ## 🎮 VerityCraft 1.2
 
-**VerityCraft** is the built-in game included with VerityOS.
+VerityCraft was introduced alongside Verity AI and continues to share its version progression.
 
-You control **Verity**, a smiling sphere, inside a text-mode game world.
+VerityCraft 1.2 features **Verity**, the friendly smiling sphere.
 
-### Controls
+Move Verity around using:
 
-```text
-W / Up Arrow       Move up
-S / Down Arrow     Move down
-A / Left Arrow     Move left
-D / Right Arrow    Move right
-ESC                Return to menu
-```
+- WASD
+- Arrow keys
 
-### VerityCraft 1. Features
-none
+VerityCraft is inspired by sandbox-game ideas while being its own tiny text-mode game built for VerityOS.
 
-You can also manually bounce Verity around the walls like a DVD screensaver.
+---
 
-If you manage to get Verity into the right place:
+## 🟢 Who Is Verity?
 
-```text
-*** PERFECT CORNER HIT! ***
-```
-was in 0.2
+Verity is a friendly **smiling sphere** and the mascot/character of VerityOS.
 
-## 🔊 PC Speaker Audio
+Not a cube.
 
-VerityOS uses the classic PC Speaker for sound.
+Not an alien.
 
-It currently provides sounds for things such as:
+A smiling sphere. :)
 
-* VerityOS startup
-* VerityCraft startup
-* Wall bounces
-* Collecting stars
-* Corner hits
-* Editor warnings
+---
 
-No giant audio framework required.
+## 💿 Disk Layout
 
-Just the PC Speaker.
+VerityOS uses a carefully planned floppy-disk layout.
 
-## 💾 Disk Layout
+The bootloader, kernel, VerityCraft, and VerityFS storage occupy separate areas of the disk.
 
-VerityOS currently uses a 1.44 MB floppy disk image.
-
-The current layout is:
-
-```text
-Sector 1        Bootloader
-Sectors 2-17    VerityOS kernel
-Sectors 18-25   VerityCraft
-Sector 26+      Available for future expansion
-```
-
-Keeping these regions separate is important.
-
-Very important.
-
-## 👽 The Alien Language Incident
-
-During development of VerityOS 0.1, Verity AI suddenly started responding with seemingly random symbols.
-
-At first, it appeared that the string-handling code or memory segments were broken.
-
-They weren't.
-
-The actual disk image looked roughly like this:
-
-```text
-Bootloader
-Kernel
-     ↓
-     ↓
-VerityCraft
-     ↑
-     ↑
-OVERLAP
-```
-
-VerityCraft had accidentally been written over the second half of the VerityOS kernel.
-
-Verity AI was therefore attempting to print pieces of VerityCraft machine code as text.
-
-The disk layout was corrected.
-
-Verity AI learned English again.
-
-VerityOS development now has one extremely important rule:
+This is extremely important because:
 
 > **NO OVERLAPPING SECTORS.**
 
+We learned that lesson already.
+
+---
+
 ## 🛠️ Building VerityOS
 
-VerityOS uses **NASM** to assemble its source code.
+### Requirements
+
+You will need:
+
+- NASM
+- Bash
+- `dd`
+- A compatible emulator or virtual machine capable of booting the generated floppy image
 
 Make the build script executable:
 
 ```bash
 chmod +x build.sh
-```
-
-Then build:
-
-```bash
-./build.sh
-```
-
-A successful build produces a bootable floppy image:
-
-```text
-verityos.img
-```
-
-The image size should be:
-
-```text
-1474560 bytes
-```
-
-or exactly **1.44 MB**.
-
-## 🚀 Running VerityOS
-
-VerityOS has primarily been developed and tested using **DOSBox-X**.
-
-Boot `verityos.img` as a floppy disk image to start the operating system.
-
-The basic architecture is:
-
-```text
-BIOS
-  |
-  v
-VerityOS Bootloader
-  |
-  v
-VerityOS Kernel
-  |
-  +----> Verity AI 1.1
-  |
-  +----> VerityEdit 1.0
-  |
-  +----> VerityCraft 1.1
-```
-
-## 📂 Project Structure
-
-```text
-VerityOS/
-├── boot.asm
-├── kernel.asm
-├── game.asm
-├── build.sh
-├── LICENSE
-└── README.md
-```
-
-Generated builds may also include:
-
-```text
-boot.bin
-kernel.bin
-game.bin
-verityos.img
-```
-
-## 🧠 What VerityOS Is For
-
-VerityOS is an experimental hobby project built for learning and having fun with low-level programming.
-
-Development involves experimenting with:
-
-* x86 Assembly
-* BIOS interrupts
-* Boot sectors
-* Real-mode programming
-* Memory segments
-* Disk sectors
-* Keyboard input
-* Text-mode interfaces
-* PC Speaker programming
-* Operating-system design
-* Game programming
-* Text editing
-* Extremely questionable bootloader jokes
-
-VerityOS is not intended to compete with Windows, macOS, or Linux.
-
-Especially not yet.
-
-## 📜 License
-
-VerityOS is distributed under the **VerityOS Safe Use License v1.0**.
-
-The source may be studied, compiled, experimented with, and modified according to the terms of that license.
-
-Malicious and unauthorized uses prohibited by the license are not permitted.
-
-See `LICENSE` for the complete terms.
-
-## ⚠️ Development Status
-
-🚧 **VerityOS is under active development.**
-
-Current release:
-
-**VerityOS 0.2**
-
-Current built-in software:
-```text
-Verity AI       1.1
-VerityEdit      1.0
-VerityCraft     1.1
-```
-
-Expect bugs.
-
-Expect experiments.
-
-But hopefully don't expect any more alien language.
-
----
-
-# VerityOS 0.3
-
-**New editor. Smarter Verity. Bigger game. Same tiny computer.**
-
-*Built one sector at a time.* 💾
