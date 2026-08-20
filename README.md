@@ -12,24 +12,18 @@ has grown into a tiny operating system with its own kernel, text-mode desktop, b
 
 ## Current Version
 
-**VerityOS 0.2**
+**VerityOS 0.3**
 
 VerityOS is still an experimental hobby operating system and is actively being developed.
 
-## What's New in 0.2?
+## What's New in 0.3?
 
-VerityOS 0.2 introduces:
+VerityOS 0.3 introduces:
 
-* 📝 **VerityEdit 1.0**
-* 🤖 **Verity AI 1.1**
-* 🎮 **VerityCraft 1.1**
+* 📝 **VerityEdit 1.1**
+* 🤖 **Verity AI 1.2**
+* 🎮 **VerityCraft 1.2**
 * 🖥️ Updated VerityOS desktop
-* 🔊 More PC Speaker sound effects
-* ℹ️ About screen
-* 📴 Shutdown screen
-* ⭐ Collectibles and scoring in VerityCraft
-* 💥 VerityCraft bounce counter
-* 🏆 Corner-hit detection
 
 ## 🖥️ VerityOS Desktop
 
@@ -48,9 +42,9 @@ Current applications and options:
 
 Everything runs in **16-bit x86 real mode** using BIOS services and direct hardware access where appropriate.
 
-## 📝 VerityEdit 1.0
+## 📝 VerityEdit 1.1
 
-New in VerityOS 0.2!
+New in VerityOS 0.3!
 
 **VerityEdit** is the first text editor built into VerityOS.
 
@@ -71,7 +65,7 @@ Example:
 
 ```text
 +------------------------------------------------------------------------------+
-| VerityEdit 1.0                                             VerityOS 0.2      |
+| VerityEdit 1.1                                             VerityOS 0.3      |
 +------------------------------------------------------------------------------+
 | File: UNTITLED.TXT                                                          |
 +------------------------------------------------------------------------------+
@@ -81,21 +75,19 @@ This text was typed inside VerityEdit.
 _
 ```
 
-### Current Limitation
+### The Current Limitation That Are Not There
 
-VerityEdit 1.0 stores documents in RAM.
+VerityEdit 1.1 stores documents in i dont know.
 
-That means your document disappears when VerityOS is rebooted.
+Well it does save when you reboot it so it works.
 
-Persistent disk saving is a possible future feature.
-
-## 🤖 Verity AI 1.1
+## 🤖 Verity AI 1.2
 
 VerityOS includes its own built-in assistant called **Verity AI**.
 
 Verity AI is not a machine-learning model. Its responses are currently hardcoded directly into VerityOS, but it provides a chat-style interface where the user can type messages and receive responses.
 
-Verity AI 1.1 understands commands including:
+Verity AI 1.2 understands commands including:
 
 ```text
 hello
@@ -121,7 +113,7 @@ Verity AI: Hello! Nice to meet you. :)
 How can I help you today?
 
 You: who are you
-Verity AI: I am Verity AI 1.1, the built-in assistant for VerityOS.
+Verity AI: I am Verity AI 1.2, the built-in assistant for VerityOS.
 
 You: joke
 Verity AI: Why did the bootloader cross the disk?
@@ -132,7 +124,7 @@ Yes.
 
 The bootloader joke survived the update.
 
-## 🎮 VerityCraft 1.1
+## 🎮 VerityCraft 1.2
 
 **VerityCraft** is the built-in game included with VerityOS.
 
@@ -148,19 +140,8 @@ D / Right Arrow    Move right
 ESC                Return to menu
 ```
 
-### VerityCraft 1.1 Features
-
-* WASD movement
-* Arrow-key movement
-* Wall collision
-* Collectible `*` stars
-* Score tracking
-* Bounce counter
-* PC Speaker sound effects
-* Corner-hit detection
-* Game menu
-* Help screen
-* About screen
+### VerityCraft 1. Features
+none
 
 You can also manually bounce Verity around the walls like a DVD screensaver.
 
@@ -169,6 +150,7 @@ If you manage to get Verity into the right place:
 ```text
 *** PERFECT CORNER HIT! ***
 ```
+was in 0.2
 
 ## 🔊 PC Speaker Audio
 
@@ -369,7 +351,7 @@ But hopefully don't expect any more alien language.
 
 ---
 
-# VerityOS 0.2
+# VerityOS 0.3
 
 **New editor. Smarter Verity. Bigger game. Same tiny computer.**
 
